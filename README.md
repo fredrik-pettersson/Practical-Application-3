@@ -21,7 +21,9 @@ Processing time was recorded, training and testing accuracies were calculated, a
 
 # Summary: Key Findings and Recommendations
 The initial input features yielded limited prediction performance at the baseline or slighly below at around 85-87 percent test accuracy with recall scores of only 5-8 percent. The Decision Tree and KNN models tended to perform the best overall with the SVC model being several magnitudes slower than the other ones:
-![Picture1](https://github.com/fredrik-pettersson/Practical-Application-3/assets/146313002/9854d326-72b1-4e9c-8411-b510c742c9a4)
+
+![First model](https://github.com/fredrik-pettersson/Practical-Application-3/assets/146313002/34d7e82d-27ac-4d2d-bf77-dbb77c78b8c5)
+
 
 Subsequent optimization of hyperparameters using GridSearchCV did not yield any significant improvement in performance, and in the case of the SVC model, it was not even possible to finish the full set of hyperparameters due to its slow performance.
 
