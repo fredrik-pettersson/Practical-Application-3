@@ -34,7 +34,8 @@ Therefore, a new set of six input features was prepared based on analysis of the
 
 The most significant input feature by far was Previous Contacts with Client, followed by marketing campaigns carried out particularly during the months of March and October, and in the month of September. The month of May had a significant negative correlation, while clients who are either retired or students have relative high correlation with successful bank account openings:
 
-![Correlations](https://github.com/fredrik-pettersson/Practical-Application-3/assets/146313002/1f4fb00e-3eda-4a85-a60e-ef27dce1623e)
+![correlations2](https://github.com/fredrik-pettersson/Practical-Application-3/assets/146313002/42b4b386-3c1e-475e-a43d-e95fd5abebd1)
+
 
 
 As can be seen in the below chart, the proportion of successful bank account openings ('yes' marked in red) improves as the number of previous contacts with client increases:
