@@ -28,13 +28,19 @@ The initial input features yielded limited prediction performance at the baselin
 Subsequent optimization of hyperparameters using GridSearchCV did not yield any significant improvement in performance, and in the case of the SVC model, it was not even possible to finish the full set of hyperparameters due to its slow performance.
 
 Therefore, a new set of six input features was prepared based on analysis of the correlation matrix between input features and the target variable y, and conclusions from a research paper. This resulted in a somewhat higher prediction performance with test accuracies around 89% and recall scores from 9% to 22%. The KNN model performed the best overall followed by the Decision Tree and Logistic Regression models. The SVC model performed quite well too, although it was orders of magnitudes slower than the other three models:
-![Picture2](https://github.com/fredrik-pettersson/Practical-Application-3/assets/146313002/305332a4-61bb-4cc9-934b-f537d6a7a0e5)
+
+![Second model](https://github.com/fredrik-pettersson/Practical-Application-3/assets/146313002/2c149370-3140-48c6-b603-8ac47b8bbc92)
+
 
 The most significant input feature by far was Previous Contacts with Client, followed by marketing campaigns carried out particularly during the months of March and October, and in the month of September. The month of May had a significant negative correlation, while clients who are either retired or students have relative high correlation with successful bank account openings:
-![Picture5c](https://github.com/fredrik-pettersson/Practical-Application-3/assets/146313002/f1f94cef-5f4d-4859-a121-6e96d9a303e0)
+
+![Correlations](https://github.com/fredrik-pettersson/Practical-Application-3/assets/146313002/1f4fb00e-3eda-4a85-a60e-ef27dce1623e)
+
 
 As can be seen in the below chart, the proportion of successful bank account openings ('yes' marked in red) improves as the number of previous contacts with client increases:
-![Picture3](https://github.com/fredrik-pettersson/Practical-Application-3/assets/146313002/d5e8410e-97d1-492a-ad5a-a43d5ac3f58e)
+
+![previous contacts](https://github.com/fredrik-pettersson/Practical-Application-3/assets/146313002/3425319b-9bd6-4bb0-8206-e73a5de175fc)
+
 
 ## Recommendations and Next Steps
 Based on the findings of the project, the main recommendation is to increase the number of interactions with existing clients, as this is by far the most significant driver of marketing campaign and business success. Another recommendation is to carry out targeted marketing campaigns primarily during the months of March and October, followed by the month of September. Further, campaigns during the month of May should be avoided. Finally, the targeting of clients who are retired as well as students has a relatively high correlation with the successful opening of new bank accounts. 
