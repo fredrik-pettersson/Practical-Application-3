@@ -12,7 +12,7 @@ Based on the findings of the project, the main recommendation is to increase the
 The machine learning models that performed the best were K-Nearest Neighbors (KNN) and Decision Trees, which were able to reach classification accuracies of close to 90%. However, more work remains in incorporating additional features such as macro economic indicators and optimizing the models further, but this is outside of the scope of this project. 
 
 # Introduction and Initial Hypothesis
-The initial hypothesis was that the information features Age, Profession, Marital Status, Education, Defaults, Home Loan, and Personal Loan are able to predict which clients would open new bank accounts after targeted marketing campaigns. The initial model had 13% successful account openings in the target variable, which means that the dataset is quite unbalanced. From this follows that the baseline performance that the classifier should aim to beat is 87% accuracy.
+The initial hypothesis was that the information features Age, Profession, Marital Status, Education, Defaults, Home Loan, and Personal Loan are able to predict which clients would open new bank accounts after targeted marketing campaigns. The initial model had 13% successful account openings in the target variable, which means that the dataset is quite unbalanced. From this also follows that the baseline performance that the classifier should aim to beat is 87% accuracy.
 
 # Methodology
 A set of input features consisting of Age, Profession, Marital Status, Education, Defaults, Home Loan, and Personal Loan was prepared, including removing rows that contained 'unknown' data, and replacing 'no' and 'yes' values with 0 and 1 values. The different levels of education were encododed with numerical values from 0 to 6 with higher values corresponding to higher education. After that, the different professional categories were encoded as binary values by creating an extra column for each job type. Finally, the resulting dataset was normalized with StandardScaler(), split into training and testing data sets, and then fitted to Logistic Regression, KNN, Decision Trees, and SVM models using their default settings. 
@@ -42,6 +42,7 @@ As can be seen in the below chart, the proportion of successful bank account ope
 
 ![previous contacts](https://github.com/fredrik-pettersson/Practical-Application-3/assets/146313002/3425319b-9bd6-4bb0-8206-e73a5de175fc)
 
+Please also see the separate Jupyter Notebook provided for additional details and results. 
 
 ## Recommendations and Next Steps
 Based on the findings of the project, the main recommendation is to increase the number of interactions with existing clients, as this is by far the most significant driver of marketing campaign and business success. Another recommendation is to carry out targeted marketing campaigns primarily during the months of March and October, followed by the month of September. Further, campaigns during the month of May should be avoided. Finally, the targeting of clients who are retired as well as students has a relatively high correlation with the successful opening of new bank accounts. 
